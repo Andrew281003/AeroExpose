@@ -1,0 +1,57 @@
+<Window x:Class="AeroExpose.UI.MissionControlOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AeroExpose"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Topmost="True"
+        Background="Transparent"
+        FontFamily="{StaticResource AppFont}"
+        Foreground="White"
+        KeyDown="OnKeyDown">
+  <Grid x:Name="Root">
+    <Border x:Name="BackdropTint" Background="#A607090E" Opacity="0" />
+    <Canvas x:Name="PreviewChromeCanvas" />
+    <Border x:Name="EmptyState"
+            Padding="22,14"
+            CornerRadius="14"
+            Background="#7A121722"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Visibility="Collapsed">
+      <StackPanel>
+        <TextBlock Text="No windows here"
+                   FontSize="20"
+                   FontWeight="SemiBold"
+                   HorizontalAlignment="Center" />
+        <TextBlock Text="Press Escape to return to the desktop"
+                   Margin="0,5,0,0"
+                   Foreground="#AFFFFFFF"
+                   FontSize="13" />
+      </StackPanel>
+    </Border>
+    <Border x:Name="DebugPanel"
+            Margin="20"
+            Padding="11,8"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            CornerRadius="8"
+            Background="#A0000000"
+            Visibility="Collapsed">
+      <TextBlock x:Name="StatusText"
+                 Foreground="#D6FFFFFF"
+                 FontFamily="Cascadia Mono, Consolas"
+                 FontSize="11"
+                 Text="Preparing overview…" />
+    </Border>
+    <TextBlock x:Name="HelpText"
+               Margin="24"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Bottom"
+               Foreground="#70FFFFFF"
+               FontSize="12"
+               Text="Arrow keys to navigate  ·  Enter to select  ·  Esc to close"
+               Visibility="Collapsed" />
+  </Grid>
+</Window>

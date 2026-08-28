@@ -1,0 +1,50 @@
+{
+  "general": {
+    "enabled": true,
+    "startWithWindows": false,
+    "launchBehavior": "Silent",
+    "showTrayIcon": true
+  },
+  "animations": {
+    "enabled": true,
+    "durationMs": 320,
+    "useSeparateSpeeds": false,
+    "openDurationMs": 320,
+    "closeDurationMs": 260,
+    "style": "Smooth",
+    "stagger": false,
+    "reduceMotion": false
+  },
+  "appearance": {
+    "theme": "System",
+    "backgroundEffect": "BlurAndDim",
+    "dimStrength": 0.35,
+    "previewCorners": "System",
+    "previewShadow": true,
+    "showTitles": true,
+    "showIcons": true,
+    "hoverEffect": "Scale",
+    "hoverScale": 1.035
+  },
+  "input": {
+    "shortcutModifiers": "Alt, Control, NoRepeat",
+    "shortcutVirtualKey": 32,
+    "fourFingerSwipeUp": "MissionControl",
+    "escapeBehavior": "CloseMissionControl"
+  },
+  "windows": {
+    "showMinimized": true,
+    "showAllMonitors": true,
+    "showTitles": true,
+    "showIcons": true,
+    "includeUntitled": false,
+    "spacing": 1.0,
+    "previewScale": 1.0
+  },
+  "advanced": {
+    "liveDwmThumbnails": true,
+    "hardwareAcceleration": true,
+    "fpsTarget": "Display",
+    "debugMode": false
+  }
+}
